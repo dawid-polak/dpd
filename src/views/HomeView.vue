@@ -11,6 +11,7 @@ const handle_send = async () => {
 
      let requestOptions = {
           method: "POST",
+          mode: 'no-cors',
           headers: myHeaders,
           body: formdata,
           redirect: "follow",
