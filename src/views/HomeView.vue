@@ -1,6 +1,8 @@
 <script setup>
 const handle_send = async () => {
      let myHeaders = new Headers();
+     myHeaders.append("Access-Control-Allow-Origin", "*")
+     myHeaders.append("Access-Control-Allow-Credentials", "true")
      myHeaders.append("X-DPD-BUCODE", "021");
      myHeaders.append("X-DPD-LOGIN", "test");
      myHeaders.append("X-DPD-PASSWORD", "thetu4Ee");
