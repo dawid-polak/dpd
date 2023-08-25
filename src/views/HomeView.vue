@@ -14,7 +14,7 @@ const handle_send = async () => {
           redirect: "follow",
      };
 
-     fetch("https://api-preprod.dpsin.dpdgroup.com:8443/shipping/v1/login", requestOptions)
+     fetch("http://dpdservicesdemo.dpd.com.pl/DPDPackageObjServicesService/DPDPackageObjServices?wsdl", requestOptions)
           .then((response) => response.text())
           .then((result) => console.log(result))
           .catch((error) => console.log("error", error));
